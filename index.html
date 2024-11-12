@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Изменение текста</title>
+</head>
+<body>
+  <h1 id="header">Привет, мир!</h1>
+  <button id= "btn">Нажми меня</button>
+  
+  <script>
+
+  const buttonElem = document.getElementById('btn');
+  const h1Elem = document.getElementById('header');
+  
+  let onButtonClick = function() {
+  h1Elem.textContent = 'ты нажал на кнопку!'
+  }
+
+  buttonElem.addEventListener('click', onButtonClick);
+
+  </script>
+</body>
+</html>
